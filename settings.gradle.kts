@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "MinimalCI"
+rootProject.name = "CameraFPS"
 include(":app")
