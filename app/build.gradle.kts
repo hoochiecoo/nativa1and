@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.cameraapp"
+    namespace = "com.example.camerafps"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.cameraapp"
+        applicationId = "com.example.camerafps"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -23,4 +23,15 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("androidx.core:core-ktx:1.12.0")
+    
+    val cameraxVersion = "1.3.1"
+    implementation("androidx.camera:camera-core:${cameraxVersion}")
+    implementation("androidx.camera:camera-camera2:${cameraxVersion}")
+    implementation("androidx.camera:camera-lifecycle:${cameraxVersion}")
+    implementation("androidx.camera:camera-view:${cameraxVersion}")
 }
